@@ -73,17 +73,20 @@
 					<form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST" >
 		        <!-- Navigation & Logo-->
 
+	<div class="main-content-wrapper section-padding-100">
+		<div class="container">
 
+						                <!-- ============= Categorias Content Area Start ============= -->
 		        <!-- Page Title -->
-				<div class="section section-breadcrumbs">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<h1>Acceder</h1>
+							<div class="section section-breadcrumbs">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<h1>Acceder</h1>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
 
 		        <div class="section">
 			    	<div class="container">
@@ -117,7 +120,9 @@
 						</div>
 					</div>
 				</div>
-
+	
+		</div>
+	</div>
 				<!-- ***** Footer Area Start ***** -->
 		    <?php include ("footer.php");?>
 		    <!-- ***** Footer Area End ***** -->
