@@ -699,4 +699,4 @@ More information and configuration options could be found on bxslider website
   * [lesshat](http://lesshat.com/) - universal LESS mixin library 
   * [famfamfam.com](http://www.famfamfam.com/) - for flag icons 
   * [codrops](http://tympanus.net/codrops) - for Mega Dropdown Menu
-  * [Ahmedeabbas](http://dribbble.com/Ahmedeabbas) - for freebie Polygon Backgrounds
+  * [Ahmedeabbas](http://dribbble.com/Ahmedeabbas) - for freebie Polygon Backgroundss
