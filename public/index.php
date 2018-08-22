@@ -30,7 +30,7 @@
     <!-- ***** Panel de cabecera End ***** -->
 
     <!-- ********** Hero Area Start ********** -->
-
+    <?php include ("slider_inicio.php");?>
     <!-- ********** Hero Area End ********** -->
     <!-- ********** Area cuerpo Inicio ********** -->
     <?= page_info('contenido') ?>
