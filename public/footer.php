@@ -22,12 +22,12 @@
           <h4>Buscar Paginas</h4>
           <ul class="nav nav-list regular">
             <li class="nav-header">More from us</li>
-            <li><a href="#">Work for us</a></li>
-            <li><a href="#">Creative process</a></li>
-            <li><a href="#">Case study</a></li>
-            <li class="nav-header">Quick links</li>
-            <li><a href="#">Scaffold awwards</a></li>
-            <li><a href="#">Meet the team</a></li>
+            <li><a href="#">Guia</a></li>
+            <li><a href="#">Hoteles</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li class="nav-header">Enlaces Rapidos</li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
           </ul>
         </div>
       </div>
