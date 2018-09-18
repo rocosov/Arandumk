@@ -8,6 +8,40 @@ function mis_peliculas(){
      $id = $v['alias'];
      $contenido = $v['contenido'];
      $li .= <<<HTML
+     <ul class="media-list">
+       <li class="media">
+         <a class="pull-left" href="$id">
+           <img class="media-object" src="http://placehold.it/64x64">
+         </a>
+         <div class="media-body">
+           <h4 class="media-heading">$titulo</h4>
+           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+           Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+           Donec lacinia congue felis in faucibus.
+
+           <!-- parrafo principal -->
+           <div class="media">
+             <!-- aqui se pone un segundo parrafo -->
+
+          </div>
+         </div>
+       </li>
+     </ul>
+
+HTML;
+    }
+
+   return "<ul>$li</ul>";
+}
+
+
+function mis_peliculasold(){
+  $posts = posts();
+   while(is_array($posts) && list($k, $v) = each($posts) ){
+     $titulo = $v['titulo'];
+     $id = $v['alias'];
+     $contenido = $v['contenido'];
+     $li .= <<<HTML
      <li>
        <a href="$id">$titulo</a>
      </li>
@@ -16,7 +50,6 @@ HTML;
 
    return "<ul>$li</ul>";
 }
-
 
 /*prueba listado*/
 function lista_de_contenido(){
