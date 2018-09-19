@@ -100,7 +100,7 @@
       <em class="fa fa-navicon">&nbsp;</em> Definiciones <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="fa fa-plus"></em></span>
       </a>
       <ul class="children collapse" id="sub-item-2">
-        <li><a class="" href="actualizar_cat">
+        <li><a class="" href="crud/index.php">
           <span class="fa fa-arrow-right">&nbsp;</span> Categorias
         </a>
       </li>
