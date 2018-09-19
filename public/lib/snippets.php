@@ -1,6 +1,6 @@
 
 <?php
-
+/*MUESTRA TOD EL DE LA TABLA CONTENIDO DEL TIPO POSTS */
 function mis_peliculas(){
   $posts = posts();
    while(is_array($posts) && list($k, $v) = each($posts) ){
@@ -14,8 +14,8 @@ function mis_peliculas(){
            <img class="media-object" src="http://placehold.it/64x64">
          </a>
          <div class="media-body">
-           <h4 class="media-heading">$titulo</h4>
-           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+           <h4 class="media-heading">$titulo </h4>
+           parrafo de subtitulo: Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
            Donec lacinia congue felis in faucibus.
 
