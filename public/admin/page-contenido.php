@@ -28,8 +28,16 @@
       </div>
 
       <label for="title">Titulo</label>
-      <input type="text" name="title" placeholder="Titulo" value="<?= $datos['titulo'] ?>" class="pure-input-1">	    <label for="title">URL</label>
+      <input type="text" name="title" placeholder="Titulo" value="<?= $datos['titulo'] ?>" class="pure-input-1">
+      <label for="title">URL</label>
       <input type="text" name="alias" value="<?= $datos['alias'] ?>" class="pure-input-1">
+      <label for="title">Imagen Portada</label>
+      <input type="text" name="urlimagen" value="<?= $datos['urlimagen'] ?>" class="pure-input-1">
+
+      <label for="title">Resumen</label>
+      <input type="text" name="resumen" placeholder="Resumen" value="<?= $datos['resumen'] ?>" class="pure-input-1">
+      <label for="title">Direccion</label>
+      <input type="text" name="direccion" placeholder="Direccion" value="<?= $datos['direccion'] ?>" class="pure-input-1">
 
       <label for="type">Contenido</label>
       <div class="adjoined-bottom">

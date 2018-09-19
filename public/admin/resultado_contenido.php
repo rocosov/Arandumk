@@ -10,13 +10,17 @@ $type = $_POST['type'];
 $category = ($type == 'PAGE') ? '': $_POST['category'];
 $date = date('Y-m-d H:i:s');
 $alias = $_POST['alias'];
+$resumen = $_POST['resumen'];
+$urlimagen = $_POST['urlimagen'];
+$direccion = $_POST['direccion'];
 if($id > 0){
   $sql = <<<SQL
-  UPDATE contenidos SET titulo = '$title', tipo= '$type', contenido = '$content', categoria = '$category', alias = '$alias' WHERE id='$id'
+  UPDATE contenidos SET titulo = '$title', tipo= '$type', contenido = '$content', categoria = '$category', alias = '$alias',resumen = '$resumen',urlimagen = '$urlimagen',direccion = '$direccion'
+  WHERE id='$id'
 SQL;
 }else{
   $sql = <<<SQL
-  INSERT INTO contenidos (titulo, tipo, contenido, categoria, alias) VALUES ('$title', '$type', '$content', '$category', '$alias')
+  INSERT INTO contenidos (titulo, tipo, contenido, categoria, alias, resumen, urlimagen, direccion)  VALUES ('$title', '$type', '$content', '$category', '$alias','$resumen','$urlimagen','$direccion')
 SQL;
 }
 

@@ -6,18 +6,19 @@ function mis_peliculas(){
    while(is_array($posts) && list($k, $v) = each($posts) ){
      $titulo = $v['titulo'];
      $id = $v['alias'];
+     $resumen = $v['resumen'];
+     $urlimagen = $v['urlimagen'];
      $contenido = $v['contenido'];
+     $direccion = $v['direccion'];
      $li .= <<<HTML
      <ul class="media-list">
        <li class="media">
          <a class="pull-left" href="$id">
-           <img class="media-object" src="http://placehold.it/64x64">
+           <img class="media-object" src="$urlimagen"> <!--http://placehold.it/64x64-->
          </a>
          <div class="media-body">
-           <h4 class="media-heading">$titulo </h4>
-           parrafo de subtitulo: Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-           Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-           Donec lacinia congue felis in faucibus.
+           <h4  class="media-heading" >$titulo </h4>
+           $resumen
 
            <!-- parrafo principal -->
            <div class="media">
