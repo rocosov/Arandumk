@@ -122,41 +122,126 @@ los teminos en comilla los coloque dentro de variables cj*/
 /*fin de la funcion lista de contenido*/
 
 
-function area_cuerpo_inicio(){
+
+
+function guia_de_posts1(){
      $li .= <<<HTML
      <!-- ********** Area cuerpo Inicio ********** -->
-     <div class="regular-page-wrap section-padding-100">
+     <section id="maincontent">
          <div class="container">
-             <div class="row justify-content-center">
-                 <div class="col-12 col-md-10 col-lg-8">
-                     <div class="page-content">
+           <div class="row-fluid">
+             <div class="span12">
+               <div class="btn-group filter-category">
+                 <a class="btn btn-success" href="#"><i class="icon-list icon-white"></i> Categoria</a>
+                 <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                 <ul class="dropdown-menu filter">
+                   <li class="all active"><a href="#"><i class="icon-picture"></i> Todo</a></li>
+                   <li class="1"><a href="#"><i class="icon-picture"></i> Autos</a></li>
+                   <li class="2"><a href="#"><i class="icon-picture"></i> Educacion</a></li>
+                   <li class="3"><a href="#"><i class="icon-picture"></i> Restaurantes</a></li>
+                   <li class="4"><a href="#"><i class="icon-picture"></i> Turismo</a></li>
+                   <li class="5"><a href="#"><i class="icon-picture"></i> Compras y Shopping</a></li>
+                   <li class="6"><a href="#"><i class="icon-picture"></i> Electronica</a></li>
+                   <li class="7"><a href="#"><i class="icon-picture"></i> Deportes</a></li>
+                   <li class="8"><a href="#"><i class="icon-picture"></i> Entretenimiento y Vida Nocturna</a></li>
+                   <li class="9"><a href="#"><i class="icon-picture"></i> Salud y Medicina</a></li>
+                   <li class="10"><a href="#"><i class="icon-picture"></i> Servicios</a></li>
+                   <li class="11"><a href="#"><i class="icon-picture"></i> Hoteles</a></li>
 
+                 </ul>
+               </div>
+               <div class="pagination pagination-right">
+                 <ul>
+                   <li><a href="#">Prev</a></li>
+                   <li><a href="#">1</a></li>
+                   <li class="active"><a href="#">2</a></li>
+                   <li><a href="#">3</a></li>
+                   <li><a href="#">4</a></li>
+                   <li><a href="#">Next</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="row">
 HTML;
 
    return "$li"
 
    ;
 }
-function area_cuerpo_fin(){
+/*MUESTRA TOD EL DE LA TABLA CONTENIDO DEL TIPO POSTS */
+function guia_de_posts2(){
+  $posts = posts();
+   while(is_array($posts) && list($k, $v) = each($posts) ){
+     $titulo = $v['titulo'];
+     $id = $v['alias'];
+     $resumen = $v['resumen'];
+     $urlimagen = $v['urlimagen'];
+     $contenido = $v['contenido'];
+     $direccion = $v['direccion'];
+     $categoria = $v['categoria'];
+     $tt ="portfolio-area da-thumbs";
+     $tl= "height: 787px;";
      $li .= <<<HTML
+
+
+
+     		        <li class="portfolio-item2" data-id="id-0" data-type="$categoria">
+                 <div class="span3">
+                   <div class="thumbnail">
+                     <div class="image-wrapp">
+                      <a href="$id"> <img src="$urlimagen"  alt="" title=""></a>
+                       <article class="da-animate da-slideFromLeft" style="display: block;">
+                         <!--<a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>-->
+                       </article>
+                     </div>
+
+                     <div class="caption">
+                       <h4><a href="$id">$titulo</a></h4>
+                       <p>$resumen</p>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+
+
+
+
+
+HTML;
+    }
+
+   return " <ul class=$tt style=$tl>$li</ul></div>";
+}
+function guia_de_posts3(){
+     $li .= <<<HTML
+     <!-- ********** Area cuerpo Inicio ********** -->
+
+   <div class="row">
+     <div class="span12">
+       <div class="pagination">
+         <ul>
+           <li><a href="#">Prev</a></li>
+           <li><a href="#">1</a></li>
+           <li class="active"><a href="#">2</a></li>
+           <li><a href="#">3</a></li>
+           <li><a href="#">4</a></li>
+           <li><a href="#">Next</a></li>
+         </ul>
+       </div>
+     </div>
    </div>
-</div>
-</div>
-</div>
-</div>
-<!-- ********** Area cuerpo fin ********** -->
+ </div>
+</section>
+
+
 HTML;
+
    return "$li"
+
    ;
 }
 
-function slider_regular(){
-     $li .= <<<HTML
-
-   <div class="hero-area height-400 bg-img background-overlay" style="background-image: url(../img/blog-img/bg4.jpg);"></div>
-HTML;
-   return "$li"
-   ;
-}
 
 ?>
