@@ -48,7 +48,7 @@
               </ul>-->
             </li>
             <li class="inverse">
-              <a href="contact.html"><i class="icon-envelope icon-white"></i> Contact</a>
+              <a href="contact.html"><i class="icon-envelope icon-white"></i> Contacto</a>
             </li>
           </ul>
         </nav>

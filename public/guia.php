@@ -49,7 +49,7 @@
         <div class="row">
           <div class="span8">
             <h3><i class="m-icon-big-swapright m-icon-white"></i> <?=page_info('titulo') ?></h3>
-            <p>Listado</p>
+            <p></p>
           </div>
           <div class="span4">
             <div class="input-append">

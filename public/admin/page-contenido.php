@@ -7,7 +7,7 @@
 
       <label for="type">Tipo</label>
       <select name="type" id="type" class="pure-input-1">
-      <option value="">Seleccionar</option>
+      <!--<option value="">Seleccionar</option>-->
       <?php $tipo = retornar_tipo_contenido(); ?>
       <?php while(is_array($tipo) && list($k, $v) = each($tipo) ): ?>
         <option value="<?= $k ?>" <?= ($k === $datos['tipo'] )? 'selected' : '' ?> ><?= $v ?></option>

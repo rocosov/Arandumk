@@ -39,6 +39,17 @@ SQL;
     $res = $mysql->search($sql);
     return $res;
   }
+  function hotel($category = '11'){
+
+    $where = (strlen($category) > 0 ) ? "AND categoria = '$category' " : "";
+    $mysql = new Mysql();
+    $sql = <<<SQL
+    SELECT * FROM contenidos WHERE tipo = 'POST' $where
+SQL;
+
+    $res = $mysql->search($sql);
+    return $res;
+  }
   function page(){
 
     $uri = substr($_SERVER['REQUEST_URI'], 1);

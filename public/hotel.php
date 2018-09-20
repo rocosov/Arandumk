@@ -48,8 +48,8 @@
       <div class="container">
         <div class="row">
           <div class="span8">
-            <h3><i class="m-icon-big-swapright m-icon-white"></i> Titulo</h3>
-            <p>Descripcion del elemento</p>
+            <h3><i class="m-icon-big-swapright m-icon-white"></i> <?=page_info('titulo') ?></h3>
+            <p></p>
           </div>
           <div class="span4">
             <div class="input-append">
@@ -69,31 +69,7 @@
       <div class="row">
         <div class="span12">
 
-
-          <h4>Contenido aqui</h4>
-          <p>
-            Lorem ipsum dolor sit amet, per cu graece fierent dignissim, et reque dicat blandit quo, ad mel stet aperiri insolens. Eum esse ancillae conclusionemque at. Ut nec ullum homero. Autem legimus in sed. Ad eam iudico delectus, aperiri maiestatis eos eu.
-            Mea viris abhorreant at, eirmod vivendo an ius.
-          </p>
-
-          <p>
-            Cu nec iudicabit percipitur, eu sit possim viderer malorum. In homero audiam aperiri eos, ea noster virtute usu, vim id inimicus philosophia. Id propriae percipit consulatu nam, in verear sensibus deseruisse has. Magna moderatius ei eum, at eum tractatos
-            contentiones. Noster electram at his, partem repudiandae contentiones ea eam. Nemore forensibus delicatissimi eu his. Est salutandi imperdiet te, sale magna commune ex pri. Diam alia sanctus ei nam, ut vel pertinax delicata, facilis invenire
-            sea ex. Pro eu sale prompta, congue inermis mea ei.
-          </p>
-
-          <blockquote>
-            <p>
-              Quot aeterno eleifend an his, nam eu minim mediocritatem. Et nam nobis dolores intellegebat, et nec ipsum conceptam
-            </p>
-          </blockquote>
-
-          <p>
-            Ei eam diam quando sapientem, ad pri enim vero eleifend. Eu everti inimicus his, te his nisl vocent. At rebum omnium blandit duo, malis scriptorem vis te. Altera mandamus eam ei, ex usu odio mutat debitis. At quo laudem iuvaret albucius, magna mundi honestatis
-            pri ut, eos ei suas feugait. Vim tation dicant ornatus in.
-          </p>
-        </div>
-      </div>
+          <?= page_info('contenido') ?>
     </div>
 
 

@@ -35,6 +35,40 @@ HTML;
    return "<ul>$li</ul>";
 }
 
+/*MUESTRA TOD EL DE LA TABLA CONTENIDO DEL TIPO POSTS que sean hotel */
+function listado_hoteles(){
+  $posts = hotel();
+   while(is_array($posts) && list($k, $v) = each($posts) ){
+     $titulo = $v['titulo'];
+     $id = $v['alias'];
+     $resumen = $v['resumen'];
+     $urlimagen = $v['urlimagen'];
+     $contenido = $v['contenido'];
+     $direccion = $v['direccion'];
+     $li .= <<<HTML
+     <ul class="media-list">
+       <li class="media">
+         <a class="pull-left" href="$id">
+           <img class="media-object" src="$urlimagen"> <!--http://placehold.it/64x64-->
+         </a>
+         <div class="media-body">
+           <h4  class="media-heading" >$titulo </h4>
+           $resumen
+
+           <!-- parrafo principal -->
+           <div class="media">
+             <!-- aqui se pone un segundo parrafo -->
+
+          </div>
+         </div>
+       </li>
+     </ul>
+
+HTML;
+    }
+
+   return "<ul>$li</ul>";
+}
 
 function mis_peliculasold(){
   $posts = posts();

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-09-2018 a las 17:30:24
+-- Tiempo de generación: 20-09-2018 a las 15:54:54
 -- Versión del servidor: 10.1.32-MariaDB
 -- Versión de PHP: 7.2.5
 
@@ -48,7 +48,8 @@ INSERT INTO `categoria` (`cod_categoria`, `descripcion`, `urlimagen`) VALUES
 (7, 'Deportes', NULL),
 (8, 'Entretenimiento y Vida Nocturna', NULL),
 (9, 'Salud y Medicina', NULL),
-(10, 'Servicios', NULL);
+(10, 'Servicios', NULL),
+(11, 'Hoteles', NULL);
 
 -- --------------------------------------------------------
 
@@ -108,7 +109,8 @@ INSERT INTO `contenidos` (`id`, `titulo`, `contenido`, `fecha_publicacion`, `tip
 (14, 'negocio1', '%3Cp%3Eresumen%3C/p%3E%0A', '2018-09-19 14:44:58', 'POST', '', 'espacio1', NULL, '', NULL, '', ''),
 (15, 'tittulll', '%3Cp%3Easasds%3C/p%3E%0A', '2018-09-19 14:52:57', 'POST', '', 'tituu', NULL, 'a', NULL, 'http://placehold.it/64x64', 'dasdsdfas'),
 (17, 'UNI', '%3Cp%3Erggfgdfgdfg%3C/p%3E%0A', '2018-09-19 15:25:41', 'POST', '', 'paginauu', NULL, 'Direccion', NULL, '', 'Resumen de la pagina un en l'),
-(18, 'titulo', '%3Cp%3Econtenido%3C/p%3E%0A', '2018-09-19 15:24:57', 'POST', '', 'pruebaas', NULL, 'Direccion', NULL, 'http://placehold.it/64x64', 'resumen');
+(18, 'Hotel de Prueba', '%3Cp%3EHotel%3C/p%3E%0A%0A%3Cp%3ECoronel%20Bogado%3C/p%3E%0A', '2018-09-20 13:46:30', 'POST', '11', 'pruebaas', NULL, 'Direccion Bogado', NULL, 'http://placehold.it/64x64', 'Resumen Hotel'),
+(19, 'Hoteles', '%3Cp%3E%5Blistado_hoteles%5D%3C/p%3E%0A', '2018-09-20 13:33:02', 'PAGE', '', 'hotel.php', NULL, '', NULL, '', 'Listado de Hoteles');
 
 -- --------------------------------------------------------
 
@@ -242,7 +244,7 @@ ALTER TABLE `configuracion`
 -- AUTO_INCREMENT de la tabla `contenidos`
 --
 ALTER TABLE `contenidos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `personal`
