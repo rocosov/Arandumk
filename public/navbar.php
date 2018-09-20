@@ -11,7 +11,7 @@
       <div>
         <nav>
           <ul class="nav topnav">
-            <li class="dropdown success active">
+            <li class="dropdown success">
               <a href="../"><i class="icon-home icon-white"></i> Inicio</a>
             </li>
             <li class="dropdown primary">

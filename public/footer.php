@@ -82,7 +82,7 @@
 
   </div>
 </footer>
-
+<script src="assets/js/custom.js"></script>
 <script src="assets/js/jquery-1.8.2.min.js"></script>
 <script src="assets/js/jquery.easing.1.3.js"></script>
 <script src="assets/js/google-code-prettify/prettify.js"></script>
@@ -96,6 +96,6 @@
 <script src="assets/js/portfolio/setting.js"></script>
 <script src="assets/js/hover/jquery-hover-effect.js"></script>
 <script src="assets/js/hover/setting.js"></script>
+<script src="assets/js/camera/camera.min.js"></script>
 
-<!-- Template Custom JavaScript File -->
-<script src="assets/js/custom.js"></script>
+<script src="assets/js/camera/setting.js"></script>
