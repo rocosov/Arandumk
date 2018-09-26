@@ -81,6 +81,7 @@
   </form>
   <ul class="nav menu">
     <li class="active"><a href="index.php"><em class="fa fa-dashboard">&nbsp;</em> Administrar</a></li>
+    <li class="parent "><a href="#"><em class="fa fa-clone">&nbsp;</em> Configurar Inicio</a></li>
     <li class="parent "><a data-toggle="collapse" href="#sub-item-1">
       <em class="fa fa-navicon">&nbsp;</em> Administrar CMS <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
       </a>

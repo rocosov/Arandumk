@@ -36,7 +36,7 @@ HTML;
 }
 
 /*MUESTRA TOD EL DE LA TABLA CONTENIDO DEL TIPO POSTS que sean hotel */
-function listado_hoteles(){
+function listado_hoteles1(){
   $posts = hotel();
    while(is_array($posts) && list($k, $v) = each($posts) ){
      $titulo = $v['titulo'];
@@ -68,6 +68,43 @@ HTML;
     }
 
    return "<ul>$li</ul>";
+}
+/*MUESTRA TOD EL DE LA TABLA CONTENIDO DEL TIPO POSTS */
+function listado_hoteles(){
+  $posts = hotel();
+   while(is_array($posts) && list($k, $v) = each($posts) ){
+     $titulo = $v['titulo'];
+     $id = $v['alias'];
+     $resumen = $v['resumen'];
+     $urlimagen = $v['urlimagen'];
+     $contenido = $v['contenido'];
+     $direccion = $v['direccion'];
+     $categoria = $v['categoria'];
+     $tt ="portfolio-area da-thumbs";
+     $tl= "height: 787px;";
+     $li .= <<<HTML
+     		        <li class="portfolio-item2" data-id="id-0" data-type="$categoria">
+                 <div class="span3">
+                   <div class="thumbnail">
+                     <div class="image-wrapp">
+                      <a href="$id"> <img src="$urlimagen"  alt="" title=""></a>
+                       <article class="da-animate da-slideFromLeft" style="display: block;">
+                         <!--<a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>-->
+                       </article>
+                     </div>
+
+                     <div class="caption">
+                       <h4><a href="$id">$titulo</a></h4>
+                       <p>$resumen</p>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+HTML;
+    }
+
+   return " <ul class=$tt style=$tl>$li</ul></div>";
 }
 
 function mis_peliculasold(){
@@ -183,9 +220,6 @@ function guia_de_posts2(){
      $tt ="portfolio-area da-thumbs";
      $tl= "height: 787px;";
      $li .= <<<HTML
-
-
-
      		        <li class="portfolio-item2" data-id="id-0" data-type="$categoria">
                  <div class="span3">
                    <div class="thumbnail">
@@ -204,11 +238,6 @@ function guia_de_posts2(){
                    </div>
                  </div>
                </li>
-
-
-
-
-
 HTML;
     }
 

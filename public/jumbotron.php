@@ -7,7 +7,7 @@
           <div class="camera_wrap camera_black_skin" id="camera_wrap_2">
             <div data-thumb="assets/img/slides/camera/img1.jpg" data-src="assets/img/slides/camera/img1.jpg">
               <div class="camera_caption fadeFromBottom">
-                <h2>Twitter bootstrap</h2>
+                <h2>AranduMk</h2>
                 <div class="hidden-phone">
                   <p>
                     Mei ad recteque rationibus, ex quaeque civibus eloquentiam vim. Solet cetero id nam. Ne eos nonumy voluptua, vis nobis euismod qualisque te, no nam debet oporteat.

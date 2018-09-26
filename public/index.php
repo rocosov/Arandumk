@@ -53,33 +53,47 @@
       <div class="span12">
         <div class="tagline">
           <div class="row">
-            <div class="span6">
-              <div class="tagline_text">
-                <h2>Scaffold will <span class="text-success">pimp up</span> your website quickly</h2>
-                <div class="tag_list">
-                  <ul>
-                    <li><span><i class="icon-fire"></i> Hottest price on the net</span></li>
-                    <li><span><i class="icon-gift"></i> More than expected</span></li>
-                    <li><span><i class="icon-plane"></i> Flying out of the crowd</span></li>
+            <div class="span12">
+              <div id="latest-work" class="carousel btleft">
+                <div class="carousel-wrapper">
+
+                  <ul class="client" style="width: 1810px; display: block; margin-left: 0px;">
+
+                    <li style="margin-right: 30px; width: 270px;">
+                      <div class="tooltip-demo thumbnail">
+                        <a href="#" data-rel="tooltip" data-placement="top" data-original-title="Company name"><img src="assets/img/clients/cl-1.png" alt=""></a>
+                      </div>
+                    </li>
+
+                    <li style="margin-right: 30px; width: 270px;">
+                      <div class="tooltip-demo thumbnail">
+                        <a href="#" data-rel="tooltip" data-placement="top" data-original-title="Company name"><img src="assets/img/clients/cl-1.png" alt=""></a>
+                      </div>
+                    </li>
+
+                    <li style="margin-right: 30px; width: 270px;">
+                      <div class="tooltip-demo thumbnail">
+                        <a href="#" data-rel="tooltip" data-placement="top" data-original-title="Company name"><img src="assets/img/clients/cl-1.png" alt=""></a>
+                      </div>
+                    </li>
+
+                    <li style="margin-right: 30px; width: 270px;">
+                      <div class="tooltip-demo thumbnail">
+                        <a href="#" data-rel="tooltip" data-placement="top" data-original-title="Company name"><img src="assets/img/clients/cl-1.png" alt=""></a>
+                      </div>
+                    </li>
+
                   </ul>
                 </div>
-              </div>
             </div>
-
-            <div class="span6">
-              <div class="btn-toolbar cta">
-                <a class="btn btn-large btn-danger" href="#"><i class="m-icon-big-swapright m-icon-white"></i> Our pricing</a>
-                <a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i> Download now</a>
-              </div>
             </div>
-
-
           </div>
         </div>
       </div>
 
     </div>
   </div>
+
 
   <!-- end tagline -->
 
