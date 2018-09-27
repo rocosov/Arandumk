@@ -48,52 +48,7 @@
 
 
 
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <div class="tagline">
-          <div class="row">
-            <div class="span12">
-              <div id="latest-work" class="carousel btleft">
-                <div class="carousel-wrapper">
-
-                  <ul class="client" style="width: 1810px; display: block; margin-left: 0px;">
-
-                    <li style="margin-right: 30px; width: 270px;">
-                      <div class="tooltip-demo thumbnail">
-                        <a href="#" data-rel="tooltip" data-placement="top" data-original-title="Company name"><img src="assets/img/clients/cl-1.png" alt=""></a>
-                      </div>
-                    </li>
-
-                    <li style="margin-right: 30px; width: 270px;">
-                      <div class="tooltip-demo thumbnail">
-                        <a href="#" data-rel="tooltip" data-placement="top" data-original-title="Company name"><img src="assets/img/clients/cl-1.png" alt=""></a>
-                      </div>
-                    </li>
-
-                    <li style="margin-right: 30px; width: 270px;">
-                      <div class="tooltip-demo thumbnail">
-                        <a href="#" data-rel="tooltip" data-placement="top" data-original-title="Company name"><img src="assets/img/clients/cl-1.png" alt=""></a>
-                      </div>
-                    </li>
-
-                    <li style="margin-right: 30px; width: 270px;">
-                      <div class="tooltip-demo thumbnail">
-                        <a href="#" data-rel="tooltip" data-placement="top" data-original-title="Company name"><img src="assets/img/clients/cl-1.png" alt=""></a>
-                      </div>
-                    </li>
-
-                  </ul>
-                </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
+  <!-- end tagline -->
 
   <!-- end tagline -->
 
