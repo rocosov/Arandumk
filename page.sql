@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-10-2018 a las 22:10:44
+-- Tiempo de generación: 08-10-2018 a las 20:50:56
 -- Versión del servidor: 10.1.32-MariaDB
 -- Versión de PHP: 7.2.5
 
@@ -100,7 +100,8 @@ INSERT INTO `contenidos` (`id`, `titulo`, `contenido`, `fecha_publicacion`, `tip
 (3, 'Inicio', '%3Cp%3E&nbsp;%3C/p%3E%0A%0A%3Cp%3E&nbsp;%3C/p%3E%0A%0A%3Cp%3E&nbsp;%3C/p%3E%0A%0A%3Cp%3E&nbsp;%3C/p%3E%0A', '2018-09-19 12:45:22', 'PAGE', '', '', NULL, NULL, NULL, NULL, NULL),
 (12, 'Guia', '%5Bguia_de_posts1%5D%5Bguia_de_posts2%5D%5Bguia_de_posts3%5D%0A', '2018-09-20 16:22:20', 'PAGE', '', 'guia.php', NULL, '', NULL, '', ''),
 (19, 'Hoteles', '%3Cp%3E%5Blistado_hoteles%5D%3C/p%3E%0A', '2018-09-20 13:33:02', 'PAGE', '', 'hotel.php', NULL, '', NULL, '', 'Listado de Hoteles'),
-(20, 'Negocio', '%3Ch3%3E%3Cimg%20alt=%22Texto%22%20src=%22%20https://via.placeholder.com/800x600%22%20style=%22float:left;%20height:100px;%20margin-right:10px;%20width:100px%22%20/%3EType%20the%20title%20here%3C/h3%3E%0A%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet,%20consectetuer%20adipiscing%20elit.%20Maecenas%20feugiat%20consequat%20diam.%20Maecenas%20metus.%20Vivamus%20diam%20purus,%20cursus%20a,%20commodo%20non,%20facilisis%20vitae,%20nulla.%20Aenean%20dictum%20lacinia%20tortor.%20Nunc%20iaculis,%20nibh%20non%20iaculis%20aliquam,%20orci%20felis%20euismod%20neque,%20sed%20ornare%20massa%20mauris%20sed%20velit.%20Nulla%20pretium%20mi%20et%20risus.%20Fusce%20mi%20pede,%20tempor%20id,%20cursus%20ac,%20ullamcorper%20nec,%20enim.%20Sed%20tortor.%20Curabitur%20molestie.%20Duis%20velit%20augue,%20condimentum%20at,%20ultrices%20a,%20luctus%20ut,%20orci.%20Donec%20pellentesque%20egestas%20eros.%20Integer%20cursus,%20augue%20in%20cursus%20faucibus,%20eros%20pede%20bibendum%20sem,%20in%20tempus%20tellus%20justo%20quis%20ligula.%20Etiam%20eget%20tortor.%20Vestibulum%20rutrum,%20est%20ut%20placerat%20elementum,%20lectus%20nisl%20aliquam%20velit,%20tempor%20aliquam%20eros%20nunc%20nonummy%20metus.%20In%20eros%20metus,%20gravida%20a,%20gravida%20sed,%20lobortis%20id,%20turpis.%20Ut%20ultrices,%20ipsum%20at%20venenatis%20fringilla,%20sem%20nulla%20lacinia%20tellus,%20eget%20aliquet%20turpis%20mauris%20non%20enim.%20Nam%20turpis.%20Suspendisse%20lacinia.%20Curabitur%20ac%20tortor%20ut%20ipsum%20egestas%20elementum.%20Nunc%20imperdiet%20gravida%20mauris.%3C/p%3E%0A', '2018-10-03 14:49:15', 'POST', '10', 'negocio', NULL, 'Ciudad', NULL, 'https://via.placeholder.com/800x600', 'Nombre de negocio resumen');
+(20, 'Negocio', '%3Ch3%3E%3Cimg%20alt=%22Texto%22%20src=%22%20https://via.placeholder.com/800x600%22%20style=%22float:left;%20height:100px;%20margin-right:10px;%20width:100px%22%20/%3EType%20the%20title%20here%3C/h3%3E%0A%0A%3Cp%3ELorem%20ipsum%20dolor%20sit%20amet,%20consectetuer%20adipiscing%20elit.%20Maecenas%20feugiat%20consequat%20diam.%20Maecenas%20metus.%20Vivamus%20diam%20purus,%20cursus%20a,%20commodo%20non,%20facilisis%20vitae,%20nulla.%20Aenean%20dictum%20lacinia%20tortor.%20Nunc%20iaculis,%20nibh%20non%20iaculis%20aliquam,%20orci%20felis%20euismod%20neque,%20sed%20ornare%20massa%20mauris%20sed%20velit.%20Nulla%20pretium%20mi%20et%20risus.%20Fusce%20mi%20pede,%20tempor%20id,%20cursus%20ac,%20ullamcorper%20nec,%20enim.%20Sed%20tortor.%20Curabitur%20molestie.%20Duis%20velit%20augue,%20condimentum%20at,%20ultrices%20a,%20luctus%20ut,%20orci.%20Donec%20pellentesque%20egestas%20eros.%20Integer%20cursus,%20augue%20in%20cursus%20faucibus,%20eros%20pede%20bibendum%20sem,%20in%20tempus%20tellus%20justo%20quis%20ligula.%20Etiam%20eget%20tortor.%20Vestibulum%20rutrum,%20est%20ut%20placerat%20elementum,%20lectus%20nisl%20aliquam%20velit,%20tempor%20aliquam%20eros%20nunc%20nonummy%20metus.%20In%20eros%20metus,%20gravida%20a,%20gravida%20sed,%20lobortis%20id,%20turpis.%20Ut%20ultrices,%20ipsum%20at%20venenatis%20fringilla,%20sem%20nulla%20lacinia%20tellus,%20eget%20aliquet%20turpis%20mauris%20non%20enim.%20Nam%20turpis.%20Suspendisse%20lacinia.%20Curabitur%20ac%20tortor%20ut%20ipsum%20egestas%20elementum.%20Nunc%20imperdiet%20gravida%20mauris.%3C/p%3E%0A', '2018-10-03 14:49:15', 'POST', '10', 'negocio', NULL, 'Ciudad', NULL, 'https://via.placeholder.com/800x600', 'Nombre de negocio resumen'),
+(21, 'Busqueda', '', '2018-10-08 18:08:43', 'PAGE', '', 'busqueda.php', NULL, '', NULL, '', '');
 
 -- --------------------------------------------------------
 
@@ -234,7 +235,7 @@ ALTER TABLE `configuracion`
 -- AUTO_INCREMENT de la tabla `contenidos`
 --
 ALTER TABLE `contenidos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `personal`
