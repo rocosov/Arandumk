@@ -102,54 +102,7 @@ include("../php/conexion.php");
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
-  <style>
-  		body{
-  			font-family: "Segoe UI",Optima,Helvetica,Arial,sans-serif;
-  			line-height: 25px;
-  		}
-  		.caja_busqueda {
-  			padding: 30px;
-  			background-color: #EAEAEA;
-  		}
-  		#busqueda_avanzada {
-  			color: #001FFF;
-  			cursor: pointer;
-  		}
-  		.resultado_resumen{
-  			margin: 5px 0px 15px;
-  		}
-  		.verde{
-  			color:#84D2A7; font-size:14px;
-  		}
 
-  		b{
-  		font-size:12px;
-  		}
-  		.InputBox {
-  			padding: 5px;
-  			border: 0;
-  			border-radius: 4px;
-  			margin: 0px 5px 15px;
-  			width: 100%;
-  		}
-  		.btn{ width:100%; font-size:14px;}
-
-  	</style>
-  	<script>
-  		function VerOcultarBusquedaAvanzada() {
-  			if(document.getElementById("advanced-search-box").style.display=="none") {
-  				document.getElementById("advanced-search-box").style.display = "block";
-  				document.getElementById("advance_search_submit").value= "1";
-  			} else {
-  				document.getElementById("advanced-search-box").style.display = "none";
-  				document.getElementById("with_the_exact_of").value= "";
-  				document.getElementById("without").value= "";
-  				document.getElementById("starts_with").value= "";
-  				document.getElementById("search_in").value= "";
-  				document.getElementById("advance_search_submit").value= "";
-  			}
-  		}
-  	</script>
 
 
 </head>
@@ -174,9 +127,11 @@ include("../php/conexion.php");
         </div>
         <div class="span4">
           <div class="input-append">
-            <form class="form-search">
-              <input type="text" class="input-medium search-query">
-              <button type="submit" class="btn btn-inverse">Buscar</button>
+             <form name="frmSearch" method="post" action="busqueda.php">
+							<input type="text" name="search[with_any_one_of]"  class="form-control" value="<?php echo $with_any_one_of; ?>"	/>
+            <!--  <input type="text" class="input-medium search-query">-->
+            <!-- <button type="submit" class="btn btn-inverse">Buscar</button>-->
+							<input type="submit" name="busqueda" class="btn btn-inverse" value="Buscar">
             </form>
           </div>
         </div>
@@ -192,7 +147,7 @@ include("../php/conexion.php");
 
 
 
-          <div class="container">
+<!--          <div class="container">
             <div class="row">
               <div class="col-md-12">
           		<h2>Busqueda avanzada usando PHP y MySQLi</h2></div>
@@ -234,7 +189,7 @@ include("../php/conexion.php");
   					                  <input type="submit" name="busqueda" class="btn btn-success" value="Buscar">
   				            </div>
                  </div>
-  			   </form>
+  			   </form>-->
     			<?php
     			if (isset($_POST["busqueda"])){
 
