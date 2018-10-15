@@ -140,13 +140,25 @@ include("../php/conexion.php");
   </div>
 </section>
 
-  <section id="maincontent">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
 
-
-
+<section id="maincontent">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="pagination pagination-right">
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li class="active"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="portfolio-area da-thumbs">
 <!--          <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -192,38 +204,56 @@ include("../php/conexion.php");
   			   </form>-->
     			<?php
     			if (isset($_POST["busqueda"])){
-
     			$number=0;
     			while($row = mysqli_fetch_assoc($result)) { $number++;?>
-    			<div>
-    				<div><strong><?php echo $number;?>. <?php echo $row["titulo"]; ?></strong></div>
-    				<div class="verde"><strong><?php echo $row["alias"]; ?></strong></div>
-    				<div class="resultado_resumen"><?php echo $row["resumen"]; ?></div>
-    			</div>
+
+								<li class="portfolio-item2" data-id="id-0" data-type="ilustrator">
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img src="assets/img/dummies/work8.jpg" alt="Portfolio name" title="">
+
+											</div>
+											<div class="caption">
+												<h4><a href="<?php echo $row["alias"]; ?>"><?php echo $row["titulo"]; ?></a></h4>
+												<p><?php echo $row["resumen"]; ?></p>
+										</div>
+									</div>
+								</div>
+							</li>
+
     			<?php } ?>
-          <?php
+					<?php
             $total = mysqli_num_rows($result);
             if($total==0){
                 echo 'No hay resultados encontrados';
-            }else{
-                echo '<hr><b>Hay un total de '.$total.' resultados en su busqueda</b>';
             }
+						#else{
+            #    echo '<hr><b>Hay un total de '.$total.' resultados en su busqueda</b>';
+            #}
 			     ?>
             <?php }else{
       				echo"<div><strong>Ingrese la palabra clave a buscar.</strong></div>";
       				}
            ?>
-
-
-      </div>
-    </div>
-  </div>
-
-</div>
+				 </ul>
+		 	</div>
+<div class="row">
+	<div class="span12">
+		<div class="pagination">
+			<ul>
+				<li><a href="#">Prev</a></li>
+				<li><a href="#">1</a></li>
+				<li class="active"><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">Next</a></li>
+			</ul>
+		</div>
+	</div>
 </div>
 </div>
 </section>
-
   <!-- Footer
  ================================================== -->
   <?php include ("footer.php");?>
