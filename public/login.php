@@ -93,13 +93,9 @@
 				        <div class="row">
 				          <div class="span8">
 				            <h3><i class="m-icon-big-swapright m-icon-white"></i> Acceder</h3>
-				            <p></p>
+				            
 				          </div>
-				          <div class="span4">
-				            <div class="input-append">
-
-				            </div>
-				          </div>
+				         
 				        </div>
 				      </div>
 				    </div>
@@ -112,40 +108,36 @@
 
 					<form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST" >
 		        <!-- Navigation & Logo-->
+					</section>
 
 
-
-							<section id="maincontent">
+						<section id="maincontent">
 						    <div class="container">
-						      <div class="row">
-						        <div class="span12">
+								<div class="row">
+									<div class="span12">
+										<form role="form" role="form">
+											<div class="form-group">
+												<label for="login-username"><i class="icon-user"></i> <b>Usario</b></label>
+												<input class="form-control" id="usuario" name="usuario" type="text" placeholder="Usuario" required>
+											</div>
+											<div class="form-group">
+												<label for="login-password"><i class="icon-lock"></i> <b>Contraseña</b></label>
+												<input class="form-control" id="password"  name="password" type="password" placeholder="Contraseña" required>
 
+											</div>
+											<div class="form-group">
 
-
-
-									<form role="form" role="form">
-										<div class="form-group">
-				        				 	<label for="login-username"><i class="icon-user"></i> <b>Usario</b></label>
-											<input class="form-control" id="usuario" name="usuario" type="text" placeholder="Usuario" required>
-										</div>
-										<div class="form-group">
-				        				 	<label for="login-password"><i class="icon-lock"></i> <b>Contraseña</b></label>
-											<input class="form-control" id="password"  name="password" type="password" placeholder="Contraseña" required>
-
-										</div>
-										<div class="form-group">
-
-											<input class="btn pull-right"  name="login" type="submit"  value="Acceder"></button>
+												<input class="btn pull-right"  name="login" type="submit"  value="Acceder"></button>
 										</form>
-										<div class="clearfix"> <?php echo isset($error) ? utf8_decode($error) : '' ;?>
+												<div class="clearfix"> <?php echo isset($error) ? utf8_decode($error) : '' ;?>
 
-										</div>
+												</div>
+											</div>
 									</div>
-									</div>
-									</div>
-									</div>
+								</div>
+							</div>
 
-  </section>
+						</section>
 
 				<!-- ***** Footer Area Start ***** -->
 

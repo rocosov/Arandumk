@@ -99,3 +99,4 @@
 <script src="assets/js/camera/camera.min.js"></script>
 
 <script src="assets/js/camera/setting.js"></script>
+<script src="assets/js/custom.js"></script>
