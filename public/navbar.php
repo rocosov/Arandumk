@@ -48,7 +48,7 @@
               </ul>-->
             </li>
             <li class="inverse">
-              <a href="contact.html"><i class="icon-envelope icon-white"></i> Contacto</a>
+              <a href="contact.php"><i class="icon-envelope icon-white"></i> Contacto</a>
             </li>
           </ul>
         </nav>

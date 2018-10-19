@@ -17,7 +17,7 @@
             </div>
             <div data-thumb="assets/img/slides/camera/img2.jpg" data-src="assets/img/slides/camera/img2.jpg">
               <div class="camera_caption fadeFromBottom">
-                <h2>Responsive layout</h2>
+                <h2>Texto Libre</h2>
                 <div class="hidden-phone">
                   <p>
                     Nam omnium salutandi ad, accusam indoctum ne mel, posse expetendis mea at. Luptatum antiopam pro ne. Eum at autem antiopam sadipscing, an his omnis splendide perfecto.
@@ -27,7 +27,7 @@
             </div>
             <div data-thumb="assets/img/slides/camera/img3.jpg" data-src="assets/img/slides/camera/img3.jpg">
               <div class="camera_caption fadeFromBottom">
-                <h2>Metro style</h2>
+                <h2>Texto Libre</h2>
                 <div class="hidden-phone">
                   <p>
                     Lorem ipsum dolor sit amet, dicam singulis in ius, eu timeam aperiam pri. His suas solum legimus eu, sea an duis habemus urbanitas. No sapientem consetetur sit an.
@@ -37,7 +37,7 @@
             </div>
             <div data-thumb="assets/img/slides/camera/img4.jpg" data-src="assets/img/slides/camera/img4.jpg">
               <div class="camera_caption fadeFromBottom">
-                <h2>Lot of features</h2>
+                <h2>Texto Libre</h2>
                 <div class="hidden-phone">
                   <p>
                     Sit et laudem aperiri argumentum. Vim laboramus instructior eu, minim aliquid accusata ut est, sea ut ridens causae quaerendum. Ea vide posidonium usu qui ad pertinax.

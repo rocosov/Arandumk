@@ -71,7 +71,7 @@
 				    Author URL: https://bootstrapmade.com
 				  ======================================================= -->
 		    </head>
-		    <body>
+
 
 
 				</head>
@@ -93,9 +93,9 @@
 				        <div class="row">
 				          <div class="span8">
 				            <h3><i class="m-icon-big-swapright m-icon-white"></i> Acceder</h3>
-				            
+
 				          </div>
-				         
+
 				        </div>
 				      </div>
 				    </div>
@@ -140,7 +140,7 @@
 						</section>
 
 				<!-- ***** Footer Area Start ***** -->
-
+				  <?php include ("footer.php");?>
 
 	</body>
 		</html>
