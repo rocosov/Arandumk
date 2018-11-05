@@ -26,7 +26,7 @@ include("../php/conexion.php");
 							if(!empty($_POST["search"]["search_in"])) {
 								$queryCondition .= $_POST["search"]["search_in"] . " LIKE '%" . $wordsAry[$i] . "%'";
 							} else {
-								$queryCondition .= "titulo LIKE '" . $wordsAry[$i] . "%' OR resumen LIKE '" . $wordsAry[$i] . "%'";
+								$queryCondition .= "tipo='POST' and  titulo LIKE '" . $wordsAry[$i] . "%' OR resumen LIKE '%" . $wordsAry[$i] . "%'";
 							}
 							if($i!=$wordsCount-1) {
 								$queryCondition .= " OR ";
@@ -65,7 +65,7 @@ include("../php/conexion.php");
 		}
 	}
 	$orderby = " ORDER BY id desc";
-	$sql = "SELECT * FROM contenidos " . $queryCondition;
+	$sql = "SELECT * FROM contenidos " . $queryCondition ;
 	$result = mysqli_query($mysqli,$sql);
 
 ?>
@@ -148,8 +148,8 @@ include("../php/conexion.php");
 					<div class="pagination pagination-right">
 						<ul>
 							<li><a href="#">Prev</a></li>
-							<li><a href="#">1</a></li>
-							<li class="active"><a href="#">2</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
 							<li><a href="#">4</a></li>
 							<li><a href="#">Next</a></li>
@@ -211,7 +211,7 @@ include("../php/conexion.php");
 									<div class="span3">
 										<div class="thumbnail">
 											<div class="image-wrapp">
-												<img src="assets/img/dummies/work8.jpg" alt="Portfolio name" title="">
+												<img src=<?php echo $row["urlimagen"]; ?> alt="Portfolio name" title="">
 
 											</div>
 											<div class="caption">
@@ -226,14 +226,14 @@ include("../php/conexion.php");
 					<?php
             $total = mysqli_num_rows($result);
             if($total==0){
-                echo 'No hay resultados encontrados';
+                echo 'No hay coincidencias con su busqueda';
             }
 						#else{
             #    echo '<hr><b>Hay un total de '.$total.' resultados en su busqueda</b>';
             #}
 			     ?>
             <?php }else{
-      				echo"<div><strong>Ingrese la palabra clave a buscar.</strong></div>";
+      				echo"<div><strong></strong></div>";
       				}
            ?>
 				 </ul>
@@ -243,8 +243,8 @@ include("../php/conexion.php");
 		<div class="pagination">
 			<ul>
 				<li><a href="#">Prev</a></li>
-				<li><a href="#">1</a></li>
-				<li class="active"><a href="#">2</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
 				<li><a href="#">3</a></li>
 				<li><a href="#">4</a></li>
 				<li><a href="#">Next</a></li>
