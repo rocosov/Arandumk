@@ -26,14 +26,14 @@ include("../php/conexion.php");
 							if(!empty($_POST["search"]["search_in"])) {
 								$queryCondition .= $_POST["search"]["search_in"] . " LIKE '%" . $wordsAry[$i] . "%'";
 							} else {
-								$queryCondition .= "tipo='POST' and  titulo LIKE '" . $wordsAry[$i] . "%' OR resumen LIKE '%" . $wordsAry[$i] . "%'";
+								$queryCondition .= " titulo LIKE '" . $wordsAry[$i] . "%' OR resumen LIKE '%" . $wordsAry[$i] . "%'";
 							}
 							if($i!=$wordsCount-1) {
 								$queryCondition .= " OR ";
 							}
 						}
 						break;
-					case "with_the_exact_of":
+					/*case "with_the_exact_of":
 						$with_the_exact_of = $v;
 						if(!empty($_POST["search"]["search_in"])) {
 							$queryCondition .= $_POST["search"]["search_in"] . " LIKE '%" . $v . "%'";
@@ -59,13 +59,13 @@ include("../php/conexion.php");
 						break;
 					case "search_in":
 						$search_in = $_POST["search"]["search_in"];
-						break;
+						break;*/
 				}
 			}
 		}
 	}
-	$orderby = " ORDER BY id desc";
-	$sql = "SELECT * FROM contenidos " . $queryCondition ;
+	$orderby = "ORDER BY id desc";
+	$sql = "SELECT * FROM contenidos " . $queryCondition  ;
 	$result = mysqli_query($mysqli,$sql);
 
 ?>
@@ -207,7 +207,7 @@ include("../php/conexion.php");
     			$number=0;
     			while($row = mysqli_fetch_assoc($result)) { $number++;?>
 
-								<li class="portfolio-item2" data-id="id-0" data-type="ilustrator">
+								<li class="portfolio-item2" data-id="id-0" data-type="<?php echo $row["categoria"]; ?>">
 									<div class="span3">
 										<div class="thumbnail">
 											<div class="image-wrapp">
@@ -233,7 +233,7 @@ include("../php/conexion.php");
             #}
 			     ?>
             <?php }else{
-      				echo"<div><strong></strong></div>";
+      				echo"<div><strong> </strong></div>";
       				}
            ?>
 				 </ul>
