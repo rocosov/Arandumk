@@ -9,7 +9,7 @@ include("../php/conexion.php");
 		foreach($_POST["search"] as $k=>$v){
 			if(!empty($v)) {
 
-				$queryCases = array("with_any_one_of","with_the_exact_of","without","starts_with");
+			$queryCases = array("with_any_one_of"/*,"with_the_exact_of","without","starts_with"*/);
 				if(in_array($k,$queryCases)) {
 					if(!empty($queryCondition)) {
 						$queryCondition .= " AND ";
@@ -26,7 +26,7 @@ include("../php/conexion.php");
 							if(!empty($_POST["search"]["search_in"])) {
 								$queryCondition .= $_POST["search"]["search_in"] . " LIKE '%" . $wordsAry[$i] . "%'";
 							} else {
-								$queryCondition .= " titulo LIKE '" . $wordsAry[$i] . "%' OR resumen LIKE '%" . $wordsAry[$i] . "%'";
+								$queryCondition .= "tipo='POST' AND titulo LIKE '" . $wordsAry[$i] . "%' OR tipo='POST' AND resumen LIKE '%" . $wordsAry[$i] . "%'";
 							}
 							if($i!=$wordsCount-1) {
 								$queryCondition .= " OR ";
@@ -64,8 +64,8 @@ include("../php/conexion.php");
 			}
 		}
 	}
-	$orderby = "ORDER BY id desc";
-	$sql = "SELECT * FROM contenidos " . $queryCondition  ;
+	$orderby = "ORDER BY id DESC";
+	$sql = "SELECT * FROM contenidos " . $queryCondition . $orderby ;
 	$result = mysqli_query($mysqli,$sql);
 
 ?>
