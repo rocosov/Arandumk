@@ -57,38 +57,82 @@
 
       <div class="row">
         <div class="span3">
-          <h3 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Main features</h3>
-          <p>Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Praesent eleifend sodales felis, in congue purus scelerisque eget.</p>
+          <h3 class="heading-success"><span class="btn btn-large btn-success">
+            <i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Comercios y lugares
+          </h3>
         </div>
-        <div class="span3">
-          <div class="well well-primary box">
-            <img src="assets/img/icons/box-1-white.png" alt="" />
-            <h3>Responsive bootstrap</h3>
-            <p>
-              Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri. Mel virtute efficiantur ne zril.
-            </p>
-            <a href="#">Read more</a>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="well well-success box">
-            <img src="assets/img/icons/box-2-white.png" alt="" />
-            <h3>With metro taste</h3>
-            <p>
-              Ad sit option intellegat, unum populo comprehensam ut sed. Copiosae corrumpit qui ex, duo nullam feugait qualisque at an dicit saperet.
-            </p>
-            <a href="#">Read more</a>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="well well-warning box">
-            <img src="assets/img/icons/box-3-white.png" alt="" />
-            <h3>Well documented</h3>
-            <p>
-              Ne vix clita integre expetenda, eos cetero numquam no, in sea omnes detracto. Ne iriure habemus maiestatis mei. Postea euripidis contentiones.
-            </p>
-            <a href="#">Read more</a>
-          </div>
+        <div class="span9">
+                <div class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/260x120">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Nombre de Empresa</h4>
+                    ...
+
+                    <!-- Nested media object -->
+                    <div class="media">
+                      ...
+                    </div>
+                  </div>
+               </div>
+               <div class="media">
+                 <a class="pull-left" href="#">
+                   <img class="media-object" src="http://placehold.it/260x120">
+                 </a>
+                 <div class="media-body">
+                   <h4 class="media-heading">Nombre de Empresa</h4>
+                   ...
+
+                   <!-- Nested media object -->
+                   <div class="media">
+                     ...
+                   </div>
+                 </div>
+              </div>
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="http://placehold.it/260x120">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Nombre de Empresa</h4>
+                  ...
+
+                  <!-- Nested media object -->
+                  <div class="media">
+                    ...
+                  </div>
+                </div>
+             </div>
+             <div class="media">
+               <a class="pull-left" href="#">
+                 <img class="media-object" src="http://placehold.it/260x120">
+               </a>
+               <div class="media-body">
+                 <h4 class="media-heading">Nombre de Empresa</h4>
+                 ...
+
+                 <!-- Nested media object -->
+                 <div class="media">
+                   ...
+                 </div>
+               </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://placehold.it/260x120">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Nombre de Empresa</h4>
+                ...
+
+                <!-- Nested media object -->
+                <div class="media">
+                  ...
+                </div>
+              </div>
+           </div>
+
         </div>
       </div>
 
@@ -110,7 +154,7 @@
 
       <div class="row">
         <div class="span12">
-          <h3><a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i></a> Trabajos Recientes</h3>
+          <h3><a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i></a> Empresas Fundadoras</h3>
 
           <div id="latest-work" class="carousel btleft">
             <div class="carousel-wrapper">
@@ -119,9 +163,9 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="assets/img/dummies/work1.jpg" alt="Portfolio name" title="" />
+                      <img src="http://placehold.it/300x200" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
+                      <!--  <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>-->
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
                       </article>
                     </div>
@@ -134,7 +178,7 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="assets/img/dummies/work2.jpg" alt="Portfolio name" title="" />
+                      <img src="http://placehold.it/300x200" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
@@ -148,7 +192,7 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="assets/img/dummies/work3.jpg" alt="Portfolio name" title="" />
+                      <img src="http://placehold.it/300x200" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
@@ -162,7 +206,7 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="assets/img/dummies/work4.jpg" alt="Portfolio name" title="" />
+                      <img src="http://placehold.it/300x200" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
@@ -176,7 +220,7 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="assets/img/dummies/work5.jpg" alt="Portfolio name" title="" />
+                      <img src="http://placehold.it/300x200" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
@@ -190,7 +234,7 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="assets/img/dummies/work6.jpg" alt="Portfolio name" title="" />
+                      <img src="http://placehold.it/300x200" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
@@ -204,7 +248,7 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="assets/img/dummies/work7.jpg" alt="Portfolio name" title="" />
+                      <img src="http://placehold.it/300x200" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
@@ -218,7 +262,7 @@
                 <li>
                   <div class="thumbnail">
                     <div class="image-wrapp">
-                      <img src="assets/img/dummies/work8.jpg" alt="Portfolio name" title="" />
+                      <img src="http://placehold.it/300x200" alt="Portfolio name" title="" />
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
