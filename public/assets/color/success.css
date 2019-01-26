@@ -12,7 +12,7 @@ a:hover {
 }
 
 .color {
-	background: #7cbb00;
+	background: black;
 	color:#fff;
 }
 
@@ -90,7 +90,7 @@ header .navbar .navbar-inner nav li.blob  {
 /* flexslider */
 .flex-direction-nav li a:hover {
 	background:#7cbb00;
-	
+
 }
 
 /* carousel */
@@ -207,7 +207,7 @@ footer.footer {
 }
 
  /* 404 */
- 
+
 
 .error-body{
 	background:#7cbb00;
