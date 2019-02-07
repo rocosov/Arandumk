@@ -31,9 +31,9 @@
           </ul>
         </div>
       </div>
-    <!--  <div class="span4">
+      <div class="span4">
         <div class="widget">
-          <h4>Get email updates</h4>
+        <!--  <h4>Get email updates</h4>
           <form class="form-horizontal" action="#" method="post">
             <fieldset>
               <p>
@@ -45,7 +45,7 @@
                 <button class="btn btn-inverse" type="submit">Subscribe!</button>
               </div>
             </fieldset>
-          </form>
+          </form>-->
           <ul class="social_small">
             <li class="facebook first"><a href="#" title="Facebook">Facebook</a></li>
             <li class="twitt"><a href="#" title="Twitter">Twitter</a></li>
@@ -54,7 +54,7 @@
             <li class="dribbble"><a href="#" title="Dribbble">Dribbble</a></li>
           </ul>
         </div>
-      </div>-->
+      </div>
     </div>
   </div>
 

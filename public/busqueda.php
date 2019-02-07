@@ -26,7 +26,7 @@ include("../php/conexion.php");
 							if(!empty($_POST["search"]["search_in"])) {
 								$queryCondition .= $_POST["search"]["search_in"] . " LIKE '%" . $wordsAry[$i] . "%'";
 							} else {
-								$queryCondition .= "tipo='POST' AND titulo LIKE '" . $wordsAry[$i] . "%' OR tipo='POST' AND resumen LIKE '%" . $wordsAry[$i] . "%'";
+								$queryCondition .= "(titulo LIKE '" . $wordsAry[$i] . "%' AND tipo LIKE '%POST') OR (resumen LIKE '%" . $wordsAry[$i] . "%'AND tipo LIKE '%POST')";
 							}
 							if($i!=$wordsCount-1) {
 								$queryCondition .= " OR ";
