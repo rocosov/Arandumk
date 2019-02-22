@@ -80,7 +80,7 @@ iframe, embed, object {
 	background: #9d02a7;
 }
 .well-success, .carousel-caption.success {
-	background: #7cbb00;
+	background: #686861;
 	color:#fff;
 }
 .well-success:hover {
@@ -115,7 +115,7 @@ iframe, embed, object {
 	background:#009cea;
 }
 .flex-caption.success {
-	background:#7cbb00;
+	background:#686861;
 }
 .flex-caption.warning {
 	background:#ffbb00;
@@ -128,7 +128,7 @@ iframe, embed, object {
 }
 
 .heading-success {
-	border-bottom:1px solid #7cbb00;
+	border-bottom:1px solid #686861;
 	font-weight:400;
 }
 .heading-warning {
@@ -319,7 +319,7 @@ ul.topnav .dropdown-menu li > a {
 .navbar .nav .success > a,
 .navbar .nav .success > a:hover,
 .navbar .nav .success > a:focus {
-	background-color: #7cbb00;
+	background-color: #686861;
 	color:#fff;
 }
 
