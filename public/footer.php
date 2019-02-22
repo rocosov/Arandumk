@@ -48,10 +48,10 @@
           </form>-->
           <ul class="social_small">
             <li class="facebook first"><a href="#" title="Facebook">Facebook</a></li>
-            <li class="twitt"><a href="#" title="Twitter">Twitter</a></li>
+          <!--  <li class="twitt"><a href="#" title="Twitter">Twitter</a></li>-->
             <li class="googleplus"><a href="#" title="google plus">Google plus</a></li>
             <li class="flickr"><a href="#" title="flickr">Flickr</a></li>
-            <li class="dribbble"><a href="#" title="Dribbble">Dribbble</a></li>
+          <!--  <li class="dribbble"><a href="#" title="Dribbble">Dribbble</a></li>-->
           </ul>
         </div>
       </div>
