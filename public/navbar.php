@@ -19,11 +19,11 @@
 
             </li>
 
-            <li class="dropdown danger">
+            <li class="dropdown primary">
               <a href="hotel.php"><i class="icon-leaf icon-white"></i> Hoteles</a>
 
             </li>
-            <li class="dropdown warning">
+            <li class="dropdown primary">
               <a href="evt.php"><i class="icon-camera icon-white"></i> Eventos</a>
           <!--    <ul class="dropdown-menu">
 
@@ -38,7 +38,7 @@
                 <li><a href="portfolio-detail.html">Portfolio detail</a></li>
               </ul>-->
             </li>
-            <li class="dropdown info">
+            <li class="dropdown primary">
               <a href="login.php"><i class="icon-bullhorn icon-white"></i> Acceder</a>
             <!--  <ul class="dropdown-menu">
                 <li><a href="blog_left_sidebar.html">Blog left sidebar</a></li>
