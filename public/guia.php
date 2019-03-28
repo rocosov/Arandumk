@@ -1,4 +1,47 @@
 <?php require_once(dirname(__FILE__) . '/../setting/core.php' ); ?>
+<?php
+include("../php/conexion.php");
+
+	$queryCondition = "";
+	if(!empty($_POST["search"])) {
+		$advance_search_submit = $_POST["advance_search_submit"];
+		foreach($_POST["search"] as $k=>$v){
+			if(!empty($v)) {
+
+			$queryCases = array("with_any_one_of"/*,"with_the_exact_of","without","starts_with"*/);
+				if(in_array($k,$queryCases)) {
+					if(!empty($queryCondition)) {
+						$queryCondition .= " AND ";
+					} else {
+						$queryCondition .= " WHERE ";
+					}
+				}
+				switch($k) {
+					case "with_any_one_of":
+						$with_any_one_of = $v;
+						$wordsAry = explode(" ", $v);
+						$wordsCount = count($wordsAry);
+						for($i=0;$i<$wordsCount;$i++) {
+							if(!empty($_POST["search"]["search_in"])) {
+								$queryCondition .= $_POST["search"]["search_in"] . " LIKE '%" . $wordsAry[$i] . "%'";
+							} else {
+								$queryCondition .= "(titulo LIKE '" . $wordsAry[$i] . "%' AND tipo LIKE '%POST') OR (resumen LIKE '%" . $wordsAry[$i] . "%'AND tipo LIKE '%POST')";
+							}
+							if($i!=$wordsCount-1) {
+								$queryCondition .= " OR ";
+							}
+						}
+						break;
+				}
+			}
+		}
+	}
+	$orderby = "ORDER BY id DESC";
+	$sql = "SELECT * FROM contenidos " . $queryCondition . $orderby ;
+	$result = mysqli_query($mysqli,$sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +79,7 @@
 	en el conrenido de la pagina se coloca
 	     <div id="w3docs-map" style="width:500px;height:380px;"></div>
   ======================================================= -->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3XfuMJJGzaU8TUItQM7XWD4esZdbpgtA"></script>
+   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3XfuMJJGzaU8TUItQM7XWD4esZdbpgtA"></script>
 
   <script>
          function initialize() {
@@ -48,7 +91,8 @@
           var map=new google.maps.Map(document.getElementById("w3docs-map"), prop);
          }
          google.maps.event.addDomListener(window, 'load', initialize);
-      </script>
+    </script>
+	<!--======================================================= -->
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -69,14 +113,14 @@
             <h3><i class="m-icon-big-swapright m-icon-white"></i> <?=page_info('titulo') ?></h3>
             <p></p>
           </div>
-          <div class="span4">
-            <div class="input-append">
-              <form class="form-search">
-                <input type="text" class="input-medium search-query">
-                <button type="submit" class="btn btn-inverse">Buscar</button>
-              </form>
-            </div>
-          </div>
+			<div class="span4">
+			  <div class="input-append">
+				 <form name="frmSearch" method="post" action="busqueda.php">
+								<input type="text" name="search[with_any_one_of]"  class="form-control" value="<?php echo $with_any_one_of; ?>"	/>
+								<input type="submit" name="busqueda" class="btn btn-inverse" value="Buscar">
+				</form>
+			  </div>
+			</div>
         </div>
       </div>
     </div>
@@ -92,6 +136,11 @@
 
 
   </section>
+  
+  
+  
+  
+  
 
   <!-- Footer
  ================================================== -->
