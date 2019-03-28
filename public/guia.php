@@ -31,6 +31,24 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
+	  <!-- =======================================================
+    script api de gps
+	en el conrenido de la pagina se coloca
+	     <div id="w3docs-map" style="width:500px;height:380px;"></div>
+  ======================================================= -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3XfuMJJGzaU8TUItQM7XWD4esZdbpgtA"></script>
+
+  <script>
+         function initialize() {
+           var prop = {
+            center:new google.maps.LatLng(-25.278244, -57.569447),
+            zoom:10,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+           };
+          var map=new google.maps.Map(document.getElementById("w3docs-map"), prop);
+         }
+         google.maps.event.addDomListener(window, 'load', initialize);
+      </script>
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
