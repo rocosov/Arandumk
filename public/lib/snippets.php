@@ -243,6 +243,7 @@ HTML;
 
    return " <ul class=$tt style=$tl>$li</ul></div>";
 }
+/*paginacion*/
 function guia_de_posts3(){
      $li .= <<<HTML
      <!-- ********** Area cuerpo Inicio ********** -->

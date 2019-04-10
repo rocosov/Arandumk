@@ -116,8 +116,8 @@ include("../php/conexion.php");
 			<div class="span4">
 			  <div class="input-append">
 				 <form name="frmSearch" method="post" action="busqueda.php">
-								<input type="text" name="search[with_any_one_of]"  class="form-control" value="<?php echo $with_any_one_of; ?>"	/>
-								<input type="submit" name="busqueda" class="btn btn-inverse" value="Buscar">
+				 <input type="text" name="search[with_any_one_of]"  class="form-control" value="<?php echo $with_any_one_of; ?>"	/>
+				 <input type="submit" name="busqueda" class="btn btn-inverse" value="Buscar">
 				</form>
 			  </div>
 			</div>
@@ -136,11 +136,11 @@ include("../php/conexion.php");
 
 
   </section>
-  
-  
-  
-  
-  
+
+
+
+
+
 
   <!-- Footer
  ================================================== -->
