@@ -5,9 +5,9 @@ class Config{
   const USERNAME = 'root';
   const PASSWORD = '';
   const DATABASE =  'page';
-  const URL = 'http://localhost/1-ecomerce-v3/public/';
+  const URL = 'http://localhost/arandumk/public/';
   const PREFIX = 'solvetic_';
   const PREFIX_PAGE = 'page_';
-  const PATH_ROOT = '1-ecomerce-v3/public/';
+  const PATH_ROOT = 'arandumk/public/';
 }
 ?>

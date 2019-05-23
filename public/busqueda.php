@@ -24,9 +24,9 @@ include("../php/conexion.php");
 						$wordsCount = count($wordsAry);
 						for($i=0;$i<$wordsCount;$i++) {
 							if(!empty($_POST["search"]["search_in"])) {
-								$queryCondition .= $_POST["search"]["search_in"] . " LIKE '%" . $wordsAry[$i] . "%'";
+								$queryCondition .= $_POST["search"]["search_in"] . " LIKE '%" . $wordsAry[$i] . "%' ";
 							} else {
-								$queryCondition .= "(titulo LIKE '" . $wordsAry[$i] . "%' AND tipo LIKE '%POST') OR (resumen LIKE '%" . $wordsAry[$i] . "%'AND tipo LIKE '%POST')";
+								$queryCondition .= "(titulo LIKE '" . $wordsAry[$i] . "%' AND tipo = 'POST') OR (resumen LIKE '%" . $wordsAry[$i] . "%'AND tipo LIKE '%POST')";
 							}
 							if($i!=$wordsCount-1) {
 								$queryCondition .= " OR ";
