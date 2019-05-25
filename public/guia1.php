@@ -42,6 +42,9 @@ include("../php/conexion.php");
 
 ?>
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,6 +70,9 @@ include("../php/conexion.php");
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+
 
   <!-- =======================================================
     Theme Name: Scaffold
@@ -109,132 +115,202 @@ include("../php/conexion.php");
     </div>
   </section>
 
-  <section id="maincontent">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-					<!-- ********** Area cuerpo Inicio ********** -->
-					<section id="maincontent">
-							<div class="container">
-								<div class="row-fluid">
-									<div class="span12">
-										<div class="btn-group filter-category">
-											<a class="btn btn-success" href="#"><i class="icon-list icon-white"></i> Categoria</a>
-											<a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-											<ul class="dropdown-menu filter">
-												<li class="all active"><a href="#"><i class="icon-picture"></i> Todo</a></li>
-												<li class="1"><a href="#"><i class="icon-picture"></i> Autos</a></li>
-												<li class="2"><a href="#"><i class="icon-picture"></i> Educacion</a></li>
-												<li class="3"><a href="#"><i class="icon-picture"></i> Restaurantes</a></li>
-												<li class="4"><a href="#"><i class="icon-picture"></i> Turismo</a></li>
-												<li class="5"><a href="#"><i class="icon-picture"></i> Compras y Shopping</a></li>
-												<li class="6"><a href="#"><i class="icon-picture"></i> Electronica</a></li>
-												<li class="7"><a href="#"><i class="icon-picture"></i> Deportes</a></li>
-												<li class="8"><a href="#"><i class="icon-picture"></i> Entretenimiento y Vida Nocturna</a></li>
-												<li class="9"><a href="#"><i class="icon-picture"></i> Salud y Medicina</a></li>
-												<li class="10"><a href="#"><i class="icon-picture"></i> Servicios</a></li>
-												<li class="11"><a href="#"><i class="icon-picture"></i> Hoteles</a></li>
+				<section id="maincontent">
+				    <div class="container">
+				      <div class="row-fluid">
+				        <div class="span12">
+				          <div class="btn-group filter-category">
+				            <a class="btn btn-success" href="#"><i class="icon-list icon-white"></i> Select category</a>
+				            <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+				            <ul class="dropdown-menu filter">
+				              <li class="all active"><a href="#"><i class="icon-picture"></i> All category</a></li>
+				              <li class="web"><a href="#"><i class="icon-picture"></i> Web design</a></li>
+				              <li class="brand"><a href="#"><i class="icon-picture"></i> Brand identity</a></li>
+				              <li class="graphic"><a href="#"><i class="icon-picture"></i> Graphic design</a></li>
+				              <li class="photo"><a href="#"><i class="icon-picture"></i> Photography</a></li>
+				              <li class="ilustrator"><a href="#"><i class="icon-picture"></i> Ilustrator</a></li>
+				            </ul>
+				          </div>
+				          <div class="pagination pagination-right">
+				            <ul>
+				              <li><a href="#">Prev</a></li>
+				              <li><a href="#">1</a></li>
+				              <li class="active"><a href="#">2</a></li>
+				              <li><a href="#">3</a></li>
+				              <li><a href="#">4</a></li>
+				              <li><a href="#">Next</a></li>
+				            </ul>
+				          </div>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <ul class="portfolio-area da-thumbs">
+				          <li class="portfolio-item2" data-id="id-0" data-type="web">
+				            <div class="span3">
+				              <div class="thumbnail">
+				                <div class="image-wrapp">
+				                  <img src="assets/img/dummies/work1.jpg" alt="Portfolio name" title="">
+				                  <article class="da-animate da-slideFromTop" style="display: block;">
+				                    <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+				                    <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>
+				                  </article>
+				                </div>
 
-											</ul>
-										</div>
-										<div class="pagination pagination-right">
-											<ul>
-												<li><a href="#">Prev</a></li>
-												<li class="active"><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#">4</a></li>
-												<li><a href="#">Next</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<?php
-										//Ejemplo aprenderaprogramar.com
+				                <div class="caption">
+				                  <h4><a href="#">Portfolio name</a></h4>
+				                  <p>Tota laboramus adversarium at sed, clita persius qui et, vis quot cibo deterruisset id. An fuisset eleifend eos, agam dicat an ius.</p>
+				                </div>
+				              </div>
+				            </div>
+				          </li>
+				          <li class="portfolio-item2" data-id="id-0" data-type="web">
+				            <div class="span3">
+				              <div class="thumbnail">
+				                <div class="image-wrapp">
+				                  <img src="assets/img/dummies/work2.jpg" alt="Portfolio name" title="">
+				                  <article class="da-animate da-slideFromLeft" style="display: block;">
+				                    <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+				                    <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>
+				                  </article>
+				                </div>
 
-										function mostrarDatos ($resultados)
-										{
-										if ($resultados !=NULL) {
-											echo '<ul class="portfolio-area da-thumbs" style="height: 787px;">';
-											echo '	<li class="portfolio-item2" data-id="id-0" data-type="'.$resultados['categoria'].'">';
-											echo '	 <div class="span3">
-													 				<div class="thumbnail">
-														 				<div class="image-wrapp">';
-											echo '				<a href="'.$resultados['alias'].'"> <img src="'.$resultados['urlimagen'].'"  alt="" title=""></a>
-														 				<article class="da-animate da-slideFromLeft" style="display: block;">';
-											echo '				</article>
-																		</div>';
-											echo '					 <div class="caption">';
-											echo '						 <h4><a href="'.$resultados['alias'].'">'.$resultados['titulo'].'</a></h4>';
-										  echo '					 <p>'.$resultados['resumen'].'</p>';
-											echo '				 </div>';
-											echo '				 </div>';
-											echo '		 </div>';
-											echo '	 	</li>';
-											echo '	</ul>';
-										}
-										else
-										 {echo "<br/>No hay más datos!!! <br/>";
-											}
-										}
-										$link = mysqli_connect("localhost", "root", "");
-										mysqli_select_db($link, "page");
-										$tildes = $link->query("SET NAMES 'utf8'"); //Para que se muestren las tildes correctamente
-										$result = mysqli_query($link, "SELECT c.id,c.resumen,c.urlimagen,c.categoria,c.titulo,c.alias,C.direccion from contenidos c where c.tipo='POST'");
-										while ($fila = mysqli_fetch_array($result)){
-										mostrarDatos($fila);
-										}
-										mysqli_free_result($result);
-										mysqli_close($link);
-										?>
-									<ul class="portfolio-area da-thumbs" style="height: 787px;">
-										<li class="portfolio-item2" data-id="id-0" data-type="$categoria">
-										 <div class="span3">
-											 <div class="thumbnail">
-												 <div class="image-wrapp">
-													<a href="$id"> <img src="$urlimagen"  alt="" title=""></a>
-													 <article class="da-animate da-slideFromLeft" style="display: block;">
-														 <!--<a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
-														 <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>-->
-													 </article>
-												 </div>
+				                <div class="caption">
+				                  <h4><a href="#">Portfolio name</a></h4>
+				                  <p>Ex decore equidem detracto vis, nihil labores euripidis an sea. Nisl solet nonumes ne has, eos nostrum antiopam aliquando at no.</p>
+				                </div>
+				              </div>
+				            </div>
+				          </li>
+				          <li class="portfolio-item2" data-id="id-0" data-type="brand">
+				            <div class="span3">
+				              <div class="thumbnail">
+				                <div class="image-wrapp">
+				                  <img src="assets/img/dummies/work3.jpg" alt="Portfolio name" title="">
+				                  <article class="da-animate da-slideFromRight" style="display: block;">
+				                    <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+				                    <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>
+				                  </article>
+				                </div>
 
-												 <div class="caption">
-													 <h4><a href="$id">$titulo</a></h4>
-													 <p>$resumen</p>
-												 </div>
-											 </div>
-										 </div>
-								 	</li>
-								</ul>
+				                <div class="caption">
+				                  <h4><a href="#">Portfolio name</a></h4>
+				                  <p>Ex decore equidem detracto vis, nihil labores euripidis an sea. Nisl solet nonumes ne has, eos nostrum antiopam aliquando at no.</p>
+				                </div>
+				              </div>
+				            </div>
+				          </li>
+				          <li class="portfolio-item2" data-id="id-0" data-type="photo">
+				            <div class="span3">
+				              <div class="thumbnail">
+				                <div class="image-wrapp">
+				                  <img src="assets/img/dummies/work4.jpg" alt="Portfolio name" title="">
+				                  <article class="da-animate da-slideFromRight" style="display: block;">
+				                    <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+				                    <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>
+				                  </article>
+				                </div>
 
+				                <div class="caption">
+				                  <h4><a href="#">Portfolio name</a></h4>
+				                  <p>Ex volutpat voluptatum vim. Mea no brute modo saepe vis at, sit te oblique recusabo ullamcorper. Mel aperiri constituto ad mel at.</p>
+				                </div>
+				              </div>
+				            </div>
+				          </li>
+				          <li class="portfolio-item2" data-id="id-0" data-type="graphic">
+				            <div class="span3">
+				              <div class="thumbnail">
+				                <div class="image-wrapp">
+				                  <img src="assets/img/dummies/work5.jpg" alt="Portfolio name" title="">
+				                  <article class="da-animate da-slideFromRight" style="display: block;">
+				                    <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+				                    <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>
+				                  </article>
+				                </div>
 
-							</div>
+				                <div class="caption">
+				                  <h4><a href="#">Portfolio name</a></h4>
+				                  <p>Ex decore equidem detracto vis, nihil labores euripidis an sea. Nisl solet nonumes ne has, eos nostrum antiopam aliquando at no.</p>
+				                </div>
+				              </div>
+				            </div>
+				          </li>
+				          <li class="portfolio-item2" data-id="id-0" data-type="graphic">
+				            <div class="span3">
+				              <div class="thumbnail">
+				                <div class="image-wrapp">
+				                  <img src="assets/img/dummies/work6.jpg" alt="Portfolio name" title="">
+				                  <article class="da-animate da-slideFromRight" style="display: block;">
+				                    <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+				                    <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>
+				                  </article>
+				                </div>
 
+				                <div class="caption">
+				                  <h4><a href="#">Portfolio name</a></h4>
+				                  <p>Ex volutpat voluptatum vim. Mea no brute modo saepe vis at, sit te oblique recusabo ullamcorper. Mel aperiri constituto ad mel at.</p>
+				                </div>
+				              </div>
+				            </div>
+				          </li>
+				          <li class="portfolio-item2" data-id="id-0" data-type="photo">
+				            <div class="span3">
+				              <div class="thumbnail">
+				                <div class="image-wrapp">
+				                  <img src="assets/img/dummies/work7.jpg" alt="Portfolio name" title="">
+				                  <article class="da-animate da-slideFromRight" style="display: block;">
+				                    <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+				                    <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>
+				                  </article>
+				                </div>
 
-					 <div class="row">
-						 <div class="span12">
-							 <div class="pagination">
-								 <ul>
-									 <li><a href="#">Prev</a></li>
-							<li class="active"><a href="#">1</a></li>
-									 <li><a href="#">2</a></li>
-									 <li><a href="#">3</a></li>
-									 <li><a href="#">4</a></li>
-									 <li><a href="#">Next</a></li>
-								 </ul>
-							 </div>
-						 </div>
-					 </div>
-				 </div>
-				</section>
+				                <div class="caption">
+				                  <h4><a href="#">Portfolio name</a></h4>
+				                  <p>Ex decore equidem detracto vis, nihil labores euripidis an sea. Nisl solet nonumes ne has, eos nostrum antiopam aliquando at no.</p>
+				                </div>
+				              </div>
+				            </div>
+				          </li>
+				          <li class="portfolio-item2" data-id="id-0" data-type="ilustrator">
+				            <div class="span3">
+				              <div class="thumbnail">
+				                <div class="image-wrapp">
+				                  <img src="assets/img/dummies/work8.jpg" alt="Portfolio name" title="">
+				                  <article class="da-animate da-slideFromRight" style="display: block;">
+				                    <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt=""></a>
+				                    <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name"></a></span>
+				                  </article>
+				                </div>
 
+				                <div class="caption">
+				                  <h4><a href="#">Portfolio name</a></h4>
+				                  <p>Tota laboramus adversarium at sed, clita persius qui et, vis quot cibo deterruisset id. An fuisset eleifend eos, agam dicat an ius.</p>
+				                </div>
+				              </div>
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+				      <div class="row">
+				        <div class="span12">
+				          <div class="pagination">
+				            <ul>
+				              <li><a href="#">Prev</a></li>
+				              <li><a href="#">1</a></li>
+				              <li class="active"><a href="#">2</a></li>
+				              <li><a href="#">3</a></li>
+				              <li><a href="#">4</a></li>
+				              <li><a href="#">Next</a></li>
+				            </ul>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </section>
+		</div>
+	</div>
+	</div>
 
-    </div>
-
-
-  </section>
 
 
 
