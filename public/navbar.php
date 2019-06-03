@@ -15,7 +15,7 @@
               <a href="../"><i class="icon-home icon-white"></i> Inicio</a>
             </li>
             <li class="dropdown primary">
-              <a href="guia.php"><i class="icon-star icon-white"></i> Guia</a>
+              <a href="cont.php"><i class="icon-star icon-white"></i> Guia</a>
 
             </li>
 

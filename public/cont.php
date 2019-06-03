@@ -136,7 +136,7 @@ include("../php/conexion.php");
 	  				<div class="row">
 
 				        <div class="span2">
-									<div class="btn-group filter-category">
+									<!-- <div class="btn-group filter-category">
 	                  <a class="btn btn-success" href="#"><i class="icon-list icon-white"></i> Categoria</a>
 	                  <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 	                  <ul class="dropdown-menu filter">
@@ -154,7 +154,27 @@ include("../php/conexion.php");
 	                    <li class="11"><a href="#"><i class="icon-picture"></i> Hoteles</a></li>
 
 	                  </ul>
-	                </div>
+	                </div> -->
+									<ul class="nav nav-tabs filter">
+										<li class="all active"><a href="#"><i class="icon-chevron-right"></i> Todo</a></li>
+
+			 						 <li class="2"><a href="#"><i class="icon-chevron-right"></i> Educacion</a></li>
+									  <li class="1"><a href="#"><i class="icon-chevron-right"></i> Autos</a></li>
+			 						 <li class="3"><a href="#"><i class="icon-chevron-right"></i> Comercial</a></li>
+			 						 <li class="4"><a href="#"><i class="icon-chevron-right"></i> Turismo</a></li>
+			 						 <li class="5"><a href="#"><i class="icon-chevron-right"></i> Compras y Shopping</a></li>
+			 						 <li class="6"><a href="#"><i class="icon-chevron-right"></i> Electronica</a></li>
+			 						 <li class="7"><a href="#"><i class="icon-chevron-right"></i> Deportes</a></li>
+			 						 <li class="8"><a href="#"><i class="icon-chevron-right"></i> Entretenimiento y Vida Nocturna</a></li>
+			 						 <li class="9"><a href="#"><i class="icon-chevron-right"></i> Salud y Medicina</a></li>
+			 						 <li class="10"><a href="#"><i class="icon-chevron-right"></i> Servicios</a></li>
+			 						 <li class="11"><a href="#"><i class="icon-chevron-right"></i> Hoteles</a></li>
+									            </ul>
+
+
+
+
+
 				        </div>
 
 

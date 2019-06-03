@@ -16,16 +16,13 @@
 
 
       <label for="category" class="only-post">Categoría</label>
-      <div class="select-editable only-post">
-        <select onchange="this.nextElementSibling.value=this.value" class="pure-input-1">
-          <option value=""></option>
-          <?php $options_category = cargar_datos_categoria() ?>
-          <?php while(is_array($options_category) && list($k, $v) = each($options_category) ): ?>
-          <option value="<?= $v['cod_categoria'] ?>"><?= $v['descripcion'] ?></option>
-          <?php endwhile; ?>
-        </select>
-        <input type="text" name="category" value="<?= $datos['cod_categoria'] ?>" />
-      </div>
+      <select name="category" id="type" class="pure-input-1">
+      <!--<option value="">Seleccionar</option>-->
+      <?php $tipo = retornar_tipo_categoria(); ?>
+      <?php while(is_array($tipo) && list($k, $v) = each($tipo) ): ?>
+        <option value="<?= $k ?>" <?= ($k === $datos['categoria'] )? 'selected' : '' ?> ><?= $v ?></option>
+      <?php endwhile; ?>
+      </select>
 
       <label for="title">Titulo</label>
       <input type="text" name="title" placeholder="Titulo" value="<?= $datos['titulo'] ?>" class="pure-input-1">

@@ -7,7 +7,7 @@ $content = $_POST['content'];
 $id = $_POST['id'];
 $title = $_POST['title'];
 $type = $_POST['type'];
-$category = ($type == 'PAGE') ? '': $_POST['category'];
+$category =  $_POST['category'];
 $date = date('Y-m-d H:i:s');
 $alias = $_POST['alias'];
 $resumen = $_POST['resumen'];
