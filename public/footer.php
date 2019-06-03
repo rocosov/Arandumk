@@ -33,8 +33,8 @@
       </div>
       <div class="span4">
         <div class="widget">
-        <!--  <h4>Get email updates</h4>
-          <form class="form-horizontal" action="#" method="post">
+        <h4>Contactenos</h4>
+          <!-- <form class="form-horizontal" action="#" method="post">
             <fieldset>
               <p>
                 Sign up for email updates and we'll plant a tree for you through Trees for the Future.
@@ -45,13 +45,12 @@
                 <button class="btn btn-inverse" type="submit">Subscribe!</button>
               </div>
             </fieldset>
-          </form>-->
+          </form> -->
           <ul class="social_small">
             <li class="facebook first"><a href="#" title="Facebook">Facebook</a></li>
-          <!--  <li class="twitt"><a href="#" title="Twitter">Twitter</a></li>-->
-            <li class="googleplus"><a href="#" title="google plus">Google plus</a></li>
-            <li class="flickr"><a href="#" title="flickr">Flickr</a></li>
-          <!--  <li class="dribbble"><a href="#" title="Dribbble">Dribbble</a></li>-->
+            <li class="googleplus"><a href="#" title="Instagram">Instagram</a></li>
+            <li class="flickr"><a href="#" title="WhatsApp">WhatsApp</a></li>
+
           </ul>
         </div>
       </div>
