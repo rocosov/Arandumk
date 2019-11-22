@@ -1,6 +1,5 @@
 <section id="intro">
   <div class="jumbotron masthead">
-
     <div class="container">
       <div class="row">
         <div class="span12">
@@ -47,7 +46,6 @@
             </div>
           </div>
           <!-- #camera_wrap_1 -->
-
         </div>
       </div>
     </div>

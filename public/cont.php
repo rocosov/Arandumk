@@ -98,18 +98,51 @@ include("../php/conexion.php");
     <div class="jumbotron subhead" id="overview">
       <div class="container">
         <div class="row">
-          <div class="span8">
-            <h3><i class="m-icon-big-swapright m-icon-white"></i> Guia</h3>
-            <p></p>
-          </div>
-			<div class="span4">
-			  <div class="input-append">
-				 <form name="frmSearch" method="post" action="busqueda.php">
-				 <input type="text" name="search[with_any_one_of]"  class="form-control" value="<?php echo $with_any_one_of; ?>"	/>
-				 <input type="submit" name="busqueda" class="btn btn-inverse" value="Buscar">
-				</form>
-			  </div>
-			</div>
+		      <div class="span">
+		            <h3><i class="m-icon-big-swapright m-icon-white"></i> Guia</h3>
+		            <p></p>
+		      </div>
+							<div class="span">
+								<select class="form-control search-slt" id="Departamento">
+										<option>Select Departamento</option>
+										<option>Example one</option>
+										<option>Example one</option>
+										<option>Example one</option>
+										<option>Example one</option>
+										<option>Example one</option>
+										<option>Example one</option>
+								</select>
+							</div>
+							<div class="span">
+								<select class="form-control search-slt" id="Ciudad">
+										<option>Select Ciudad</option>
+										<option>Example one</option>
+										<option>Example one</option>
+										<option>Example one</option>
+										<option>Example one</option>
+										<option>Example one</option>
+										<option>Example one</option>
+								</select>
+							</div>
+							<div class="span">
+									<select class="form-control search-slt" id="Categoria">
+											<option>Select Categoria</option>
+											<option>Example one</option>
+											<option>Example one</option>
+											<option>Example one</option>
+											<option>Example one</option>
+											<option>Example one</option>
+											<option>Example one</option>
+									</select>
+							</div>
+					<div class="span">
+					  <div class="input-append">
+						 <form name="frmSearch" method="post" action="busqueda.php">
+						 <input type="text" name="search[with_any_one_of]"  class="form-control" value="<?php echo $with_any_one_of; ?>"	/>
+						 <input type="submit" name="busqueda" class="btn btn-inverse" value="Buscar">
+						</form>
+					  </div>
+					</div>
         </div>
       </div>
     </div>
